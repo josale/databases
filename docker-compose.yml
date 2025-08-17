@@ -12,7 +12,7 @@ services:
       POSTGRES_DB: postgres
       POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
     ports:
-      - "5434:5432"
+      - "5434:5434"
     volumes:
       - eco_shop_db_data:/var/lib/postgresql/data
     healthcheck:
