@@ -1,19 +1,18 @@
-# docker-compose.yml (en la raíz del repo padre)
 version: "3.9"
 
 services:
-  echo-shop-db:
+  eco-shop-db:
     build:
       context: ./submodules/eco-shop-db
       dockerfile: Dockerfile
-    container_name: echo-shop-db
+    container_name: eco-shop-db
     environment:
-      POSTGRES_USER: echo_user
-      POSTGRES_PASSWORD: echo_pass
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
       POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
     ports:
-      - "5432:5432"
+      - "5434:5432"
     volumes:
       - eco_shop_db_data:/var/lib/postgresql/data
     healthcheck:
