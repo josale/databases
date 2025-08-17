@@ -1,0 +1,6 @@
+[submodule "submodules/adventure-works-db"]
+	path = submodules/adventure-works-db
+	url = git@github.com:josale/adventure-works-db.git
+[submodule "submodules/eco-shop-db"]
+	path = submodules/eco-shop-db
+	url = git@github.com:josale/eco-shop-db.git
